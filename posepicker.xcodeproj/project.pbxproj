@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		887DAC152B347A840061F29D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 887DAC142B347A840061F29D /* Alamofire */; };
 		88FD68962B34416700ACF4F6 /* posepicker Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 88FD68952B34416700ACF4F6 /* posepicker Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		88FD689B2B34416700ACF4F6 /* posepickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD689A2B34416700ACF4F6 /* posepickerApp.swift */; };
 		88FD689D2B34416700ACF4F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD689C2B34416700ACF4F6 /* ContentView.swift */; };
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887DAC152B347A840061F29D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = "posepicker Watch App";
+			packageProductDependencies = (
+				887DAC142B347A840061F29D /* Alamofire */,
+			);
 			productName = "posepicker Watch App";
 			productReference = 88FD68952B34416700ACF4F6 /* posepicker Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 88FD68882B34416600ACF4F6;
+			packageReferences = (
+				887DAC132B347A840061F29D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 88FD68902B34416700ACF4F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -693,6 +701,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		887DAC132B347A840061F29D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		887DAC142B347A840061F29D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 887DAC132B347A840061F29D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88FD68892B34416600ACF4F6 /* Project object */;
 }
